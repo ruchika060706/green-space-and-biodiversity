@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Space and Biodiversity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef7ee;
+            color: #2d3e2d;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+        }
+
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        img.main-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        h2, h3 {
+            color: #2d3e2d;
+        }
+
+        .topics {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        @media(min-width: 768px){
+            .topics {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+
+        .topic-card {
+            background-color: #388E3C;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            transition: background 0.3s;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .topic-card:hover {
+            background-color: #2e7d32;
+        }
+
+        .did-you-know {
+            background-color: #d4edda; 
+            border-left: 5px solid #28a745; 
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-style: italic;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .did-you-know:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Green Space and Biodiversity</h1>
+</header>
+
+<!-- Homepage Section -->
+<section id="home" class="active">
+    <img class="main-image" src="https://t4.ftcdn.net/jpg/12/99/71/25/360_F_1299712567_ROkjuKX4hVCNAei2tXcWhelo9oHKt2sz.jpg" alt="Green Space">
+
+    <p>
+        Green spaces, such as parks, gardens, and urban forests, are vital for preserving biodiversity—the variety of life—within urban environments. As cities expand, they often replace natural habitats, leading to habitat loss and fragmentation. Green spaces combat this by providing essential habitats, food, and shelter for a wide array of species, from birds and insects to small mammals and native plants. The quality of these spaces, measured by factors like size, plant diversity, and connectivity, directly influences their ability to support a thriving ecosystem.
+    </p>
+
+    <p>
+        Beyond simply acting as isolated refuges, green spaces serve as crucial ecological corridors, creating a network of connected habitats. This allows species to move safely throughout the urban landscape, preventing genetic isolation and supporting healthier, more resilient populations. For instance, a series of connected parks or tree-lined streets can act as a "stepping stone" for pollinators like bees and butterflies, ensuring their ability to access resources and maintain local plant populations. This interconnectedness is essential for the overall health of the urban ecosystem.
+    </p>
+
+    <p>
+        The biodiversity within green spaces provides critical ecosystem services that benefit humans. Trees and plants filter air and water, mitigate the urban heat island effect by providing shade and cooling, and help manage stormwater runoff. By supporting diverse plant and animal life, these areas also contribute to natural pest control and pollination, which are vital for local food production. Ultimately, the strategic integration and thoughtful management of green spaces are fundamental to creating sustainable, livable, and ecologically balanced cities.
+    </p>
+
+    <ul>
+        <li>Green spaces act as biodiversity hotspots by supporting native and migratory species, with even small gardens contributing to pollinator populations like bees and butterflies, which are crucial for ecosystem health.</li>
+        <li>The ecological value of green spaces is enhanced by their structural complexity, including canopy cover, tree height, and understory vegetation, which positively influence bird and arthropod diversity.</li>
+        <li>Urban green spaces contribute to climate resilience by moderating temperatures, reducing the urban heat island effect, and absorbing stormwater to prevent flooding, while also improving air and water quality.</li>
+    </ul>
+
+    <div class="topics">
+        <div class="topic-card" onclick="showSection('importance')">Importance</div>
+        <div class="topic-card" onclick="showSection('threats')">Threats</div>
+        <div class="topic-card" onclick="showSection('methodology')">Methodology</div>
+        <div class="topic-card" onclick="showSection('outcome')">Outcome</div>
+        <div class="topic-card" onclick="showSection('caseStudies')">Case Studies</div>
+        <div class="topic-card" onclick="showSection('howToContribute')">How to Contribute</div>
+    </div>
+</section>
+
+<!-- Importance Section -->
+<section id="importance">
+    <h1 style="text-align:center;">Importance</h1>
+    <img class="main-image" src="https://d32m1btok6bzqh.cloudfront.net/wp-content/uploads/2023/03/GreenSpaces-copy.jpg" alt="Green Space">
+
+    <p>
+        Urban green spaces are critically important for supporting biodiversity and providing essential ecosystem services that benefit both wildlife and human well-being. Research indicates that these spaces serve as vital habitats, wildlife corridors, and biodiversity hotspots, helping to maintain ecological balance in urban environments. They also contribute significantly to climate regulation, air and water purification, and flood prevention, while supporting pollinators and natural pest control.
+    </p>
+
+    <h2>Habitat and Biodiversity Support</h2>
+    <ul>
+        <li>Green spaces provide shelter, breeding grounds, and food sources for a wide range of species, including birds, insects, mammals, and plants, acting as refuges in areas where natural habitats are scarce.</li>
+        <li>Even small green spaces can support significant biodiversity by providing resources like flowering trees and native vegetation for food and shelter.</li>
+        <li>The presence of diverse plant species in these areas promotes biodiversity, supporting both native and migratory species.</li>
+    </ul>
+
+    <h2>Ecosystem Services</h2>
+    <ul>
+        <li>Vegetation in green spaces absorbs pollutants, filters rainwater, reduces stormwater runoff, and sequesters carbon, improving air and water quality and mitigating climate change.</li>
+        <li>They play a crucial role in moderating urban temperatures by providing shade and cooling through evapotranspiration, thereby reducing the urban heat island effect.</li>
+        <li>Green spaces enhance soil health by preventing erosion and supporting microbial communities.</li>
+    </ul>
+
+    <h2>Human Well-being and Social Benefits</h2>
+    <ul>
+        <li>Green spaces are linked to improved mental and physical health, offering opportunities for recreation, social interaction, and psychological restoration.</li>
+        <li>They foster a connection to nature, raising awareness of conservation and supporting community engagement.</li>
+        <li>The presence of biodiversity within these spaces has been associated with enhanced psychological well-being.</li>
+    </ul>
+
+    <h2>Planning and Management</h2>
+    <ul>
+        <li>Studies show that urban green spaces can effectively serve both human utility and biodiversity goals simultaneously.</li>
+        <li>Larger spaces and features like nature preserves, bodies of water, and dog parks correlate positively with biodiversity.</li>
+        <li>The concept of "land sharing," which involves integrating numerous small, multifunctional green spaces throughout the urban landscape, promotes biodiversity, climate resilience, and equitable access to nature.</li>
+    </ul>
+    
+    <div class="did-you-know">Did you know? Green spaces help prevent floods by absorbing rainwater!</div>
+    <div class="did-you-know">Did you know? Spending 20 minutes in green spaces can reduce stress!</div>
+    <div class="did-you-know">Did you know? Properly planned green spaces benefit both people and nature!</div>
+
+    <div class="topics">
+        <div class="topic-card" onclick="showSection('home')">Home</div>
+        <div class="topic-card" onclick="showSection('threats')">Threats</div>
+        <div class="topic-card" onclick="showSection('methodology')">Methodology</div>
+        <div class="topic-card" onclick="showSection('outcome')">Outcome</div>
+        <div class="topic-card" onclick="showSection('caseStudies')">Case Studies</div>
+        <div class="topic-card" onclick="showSection('howToContribute')">How to Contribute</div>
+    </div>
+</section>
+
+<!-- Threats Section -->
+<section id="threats">
+    <h1 style="text-align:center;">Threats</h1>
+    <img class="main-image" src="https://media.geeksforgeeks.org/wp-content/uploads/20240131093238/Threats-to-biodiversity-768.png" alt="Threats to Biodiversity">
+
+   <p>
+        Urban green spaces, while vital for supporting biodiversity, face significant threats from urbanization, habitat fragmentation, and the homogenization of soil microbial communities, which can reduce ecosystem resilience to climate change. Despite their role in providing habitat and ecosystem services, the effectiveness of these spaces is challenged by the dominance of non-native species, simplified vegetation, and the increasing pressure of urban expansion.
+    </p>
+
+    <p>
+        Urban parks and residential green spaces exhibit higher soil biodiversity than nearby forests and farmlands, but this diversity is becoming increasingly homogenized across cities, potentially making these ecosystems less resilient to large-scale environmental changes.
+    </p>
+
+    <p>
+        The introduction of invasive species, pollution, and habitat loss due to infrastructure development are major threats to urban biodiversity, disrupting ecological processes and diminishing the benefits provided by green spaces.
+    </p>
+
+    <p>
+        Informal green spaces, such as utility easements and brownfield sites, contribute significantly to urban species richness and should be integrated into planning alongside formal parks to enhance biodiversity outcomes.
+    </p>
+
+    <p>
+        Simple interventions like increasing understorey vegetation and planting native species can substantially improve biodiversity in urban green spaces by supporting a wider range of species.
+    </p>
+
+    <p>
+        The success of green space initiatives, as seen in Singapore, demonstrates that connected networks of parks and green corridors can boost biodiversity, but these efforts face challenges from high costs, maintenance demands, and the need for sustained community and financial support.
+    </p>
+
+    <div class="did-you-know">Did you know? Invasive species are one of the biggest threats to urban biodiversity!</div>
+    <div class="did-you-know">Did you know? Even small interventions like native plantings help biodiversity!</div>
+    <div class="did-you-know">Did you know? Soil microbial diversity is declining in cities!</div>
+    <div class="did-you-know">Did you know? Informal green spaces can support surprising biodiversity!</div>
+
+    <div class="topics">
+        <div class="topic-card" onclick="showSection('home')">Home</div>
+        <div class="topic-card" onclick="showSection('importance')">Importance</div>
+        <div class="topic-card" onclick="showSection('methodology')">Methodology</div>
+        <div class="topic-card" onclick="showSection('outcome')">Outcome</div>
+        <div class="topic-card" onclick="showSection('caseStudies')">Case Studies</div>
+        <div class="topic-card" onclick="showSection('howToContribute')">How to Contribute</div>
+    </div>
+</section>
+
+<!-- Methodology Section -->
+<section id="methodology">
+    <h1 style="text-align:center;">Methodology</h1>
+    <img class="main-image" src="https://projectevergreen.org/wp-content/uploads/2024/09/JH-end-of-project.jpg" alt="Methodology Image">
+
+    <p>
+        Urban green spaces can be effectively managed to support biodiversity through a combination of nature-based interventions, adaptive management, and the integration of both formal and informal green spaces into urban planning. A comprehensive framework integrating ecological principles, urban planning, and adaptive management is crucial for fostering resilient and biodiverse urban landscapes.
+    </p>
+
+    <ul>
+        <li>Urban green infrastructure (UGI) supports biodiversity through adaptive management involving iterative planning, monitoring, and stakeholder engagement.</li>
+        <li>Nature-based approaches, like installing artificial perches or using forest litter, promote ecological succession and increase local biodiversity.</li>
+        <li>Informal green spaces, such as utility easements and brownfield sites, contribute significantly to urban species richness.</li>
+        <li>Crowdsourced data platforms like eBird allow city-scale biodiversity assessment.</li>
+        <li>Biodiversity metrics, like species richness and habitat diversity, can be calculated using ArcGIS and Shannon’s diversity index.</li>
+        <li>Institutional anchoring of biodiversity policies ensures long-term effective management despite challenges.</li>
+    </ul>
+
+    <!-- Flowchart -->
+    <div class="flowchart">
+        <div class="flow-step">Area-Based Assessment<br>(Sealed, Partially Sealed, Unsealed)</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Ecosystem Service Evaluation<br>(Functions & Impacts)</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Habitat Mapping & Biodiversity Indices<br>(Shannon’s Index)</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Connectivity Analysis<br>(Least-Cost Paths & Green Networks)</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Implementation & Adaptive Management<br>(Native Species, Rain Gardens, Green Roofs)</div>
+    </div>
+
+    <div class="did-you-know">Did you know? Even informal green spaces like utility easements can significantly boost biodiversity!</div>
+    <div class="did-you-know">Did you know? Installing artificial perches or logs promotes ecological succession in urban parks!</div>
+
+    <div class="topics">
+        <div class="topic-card" onclick="showSection('home')">Home</div>
+        <div class="topic-card" onclick="showSection('importance')">Importance</div>
+        <div class="topic-card" onclick="showSection('threats')">Threats</div>
+        <div class="topic-card" onclick="showSection('outcome')">Outcome</div>
+        <div class="topic-card" onclick="showSection('caseStudies')">Case Studies</div>
+        <div class="topic-card" onclick="showSection('howToContribute')">How to Contribute</div>
+    </div>
+</section>
+
+<!-- Outcome Section -->
+<section id="outcome">
+    <h1 style="text-align:center;">Outcome</h1>
+    <img class="main-image" src="https://www.greenlivinganswers.com/blog/wp-content/uploads/2024/02/urban-green-spaces-1024x585.jpg" alt="Urban Green Spaces">
+
+    <p>
+        The promotion and conservation of green spaces within urban environments lead to a variety of positive outcomes that extend across ecological, social, and economic dimensions. By prioritizing biodiversity-friendly planning and management, cities become healthier, more sustainable, and more resilient to environmental change. These outcomes demonstrate that urban areas can coexist harmoniously with nature while supporting human well-being.
+    </p>
+
+    <p>
+        From an ecological perspective, the creation and restoration of green spaces enhance biodiversity by providing safe habitats, nesting areas, and food sources for wildlife. The reintroduction of native plant species helps revive local ecosystems, stabilize soil, and improve water retention. Moreover, green corridors and connected habitats facilitate the movement of species, supporting genetic diversity and reducing the risks of extinction due to isolation.
+    </p>
+
+    <p>
+        Environmentally, green spaces contribute to better air quality, reduced carbon emissions, and effective climate regulation. Vegetation absorbs pollutants, sequesters carbon dioxide, and moderates urban temperatures, mitigating the effects of heat islands. They also play a major role in stormwater management by filtering rainwater and reducing flooding, making cities more climate-resilient and adaptive to extreme weather conditions.
+    </p>
+
+    <p>
+        The social and psychological benefits of green spaces are equally significant. Access to parks, gardens, and natural areas has been linked to improved mental health, lower stress levels, and increased physical activity among residents. These spaces also foster community interaction and awareness about sustainability, encouraging people to take an active role in conservation. As a result, green spaces serve as a bridge between people and nature, promoting ecological awareness and social harmony.
+    </p>
+
+    <p>
+        Overall, the outcome of integrating green spaces into urban design reflects a balanced coexistence between human development and the natural world. When cities invest in biodiversity, they not only enhance environmental quality but also ensure a sustainable future for upcoming generations.
+    </p>
+
+    <h2>Key Outcomes:</h2>
+    <ul>
+        <li>Enhanced biodiversity through the protection and restoration of native habitats.</li>
+        <li>Improved air and water quality contributing to a healthier urban environment.</li>
+        <li>Reduction in urban heat island effects and increased climate resilience.</li>
+        <li>Increased community engagement and environmental awareness among citizens.</li>
+        <li>Boost in overall well-being, recreation, and quality of life for city residents.</li>
+    </ul>
+
+    <div class="did-you-know">Did you know? A single mature tree can absorb up to 22 kg of carbon dioxide every year!</div>
+    <div class="did-you-know">Did you know? Cities with more green spaces report up to 20% lower stress levels among residents!</div>
+    <div class="did-you-know">Did you know? Green corridors help wildlife travel safely across urban landscapes!</div>
+
+    <div class="topics">
+        <div class="topic-card" onclick="showSection('home')">Home</div>
+        <div class="topic-card" onclick="showSection('importance')">Importance</div>
+        <div class="topic-card" onclick="showSection('threats')">Threats</div>
+        <div class="topic-card" onclick="showSection('methodology')">Methodology</div>
+        <div class="topic-card" onclick="showSection('caseStudies')">Case Studies</div>
+        <div class="topic-card" onclick="showSection('howToContribute')">How to Contribute</div>
+    </div>
+</section>
+
+<style>
+/* Flowchart Styles */
+.flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.flow-step {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.flow-arrow {
+    font-size: 24px;
+    margin: 5px 0;
+}
+</style>
+
+<!-- Placeholder Sections -->
+<section id="methodology"><h1 style="text-align:center;">Methodology</h1></section>
+<section id="outcome"><h1 style="text-align:center;">Outcome</h1></section>
+<section id="caseStudies"><h1 style="text-align:center;">Case Studies</h1></section>
+<section id="howToContribute"><h1 style="text-align:center;">How to Contribute</h1></section>
+
+<footer>
+    <p>© 2025 Green Space and Biodiversity Project</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(sec => sec.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</body>
+</html>
